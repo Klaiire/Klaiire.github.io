@@ -47,21 +47,11 @@
       autostart: true,
     },
   });
-  </script>
-  <script>
     
-      infobipWebPush("on", "browserRegistered", function (registration) {
-
-              console.log(
-
-                "browserRegistered",
-
-                registration,
-
-                registration.details.pushRegId
-
-              );
-</script>
+          infobipWebPush("on", "browserRegistered", function (registration) {
+              console.log("browserRegistered",registration,registration.details.pushRegId);
+          });
+  </script>
   
 
 
